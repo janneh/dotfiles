@@ -17,9 +17,11 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 
-
+# NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+# rbenv
+eval "$(rbenv init -)"
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin # Postgres App
 export PATH=$PATH:$HOME/wildfly/current/bin # Wildfly
