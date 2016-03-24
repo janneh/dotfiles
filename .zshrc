@@ -11,7 +11,7 @@ ZSH_THEME="gianu"
 DEFAULT_USER="janne"
 
 # Plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git utility tmux syntax-highlight history osx ruby rails brew)
+plugins=(git ssh-agent utility tmux syntax-highlight history osx ruby rails brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,9 +20,12 @@ alias zshconfig="vim ~/.zshrc"
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
 # rbenv
 eval "$(rbenv init -)"
 
+# Java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin # Postgres App
 export PATH=$PATH:$HOME/wildfly/current/bin # Wildfly
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
