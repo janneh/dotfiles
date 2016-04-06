@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Janne Lönn
-	email = janne.o.harju@gmail.com
+	email = janne@izettle.com
 [alias]
 	co = checkout
 	ci = commit
@@ -39,3 +39,8 @@
 	insteadOf = "git://github.com/janneh/"
 [help]
 	autocorrect = 1
+
+[push]
+	default = simple
+[pull]
+	rebase = true
