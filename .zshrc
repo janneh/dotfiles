@@ -24,8 +24,14 @@ source $(brew --prefix nvm)/nvm.sh
 # rbenv
 eval "$(rbenv init -)"
 
+# docker-machine
+eval "$(docker-machine env default)"
+
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
+# Path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin # Postgres App
 export PATH=$PATH:$HOME/wildfly/current/bin # Wildfly
+
+source ~/.aliases &>/dev/null
