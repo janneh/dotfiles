@@ -1,46 +1,47 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Janne Lönn
-	email = janne@izettle.com
+  name = Janne Lönn
+  email = janne@izettle.com
 [alias]
-	co = checkout
-	ci = commit
-	br = branch
-	pr = pull --rebase
-	p = push
-	st = status -s
-	su = submodule update
-	sui = submodule update --init
-	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	locate = "!f() { git ls-tree -r --name-only HEAD | grep --color -i -E $1 - ; } ; f"
-	branch-dates = "!f() { git for-each-ref --sort=committerdate refs/${1:-heads}/ --format='%(committerdate:short)\t%(authorname)\t%(refname:short)' | sed 's_origin/__g' | column -t -s'      ' ; } ; f"
+  co = checkout
+  ci = commit
+  br = branch
+  pl = pull
+  pr = pull --rebase
+  p = push
+  st = status -s
+  su = submodule update
+  sui = submodule update --init
+  df = diff --color --color-words --abbrev
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  locate = "!f() { git ls-tree -r --name-only HEAD | grep --color -i -E $1 - ; } ; f"
+  branch-dates = "!f() { git for-each-ref --sort=committerdate refs/${1:-heads}/ --format='%(committerdate:short)\t%(authorname)\t%(refname:short)' | sed 's_origin/__g' | column -t -s'      ' ; } ; f"
 [color]
-	ui = always
+  ui = always
 [core]
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
-	autocrlf = false
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+  autocrlf = false
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 
 [url "git@github.com:janneh/"]
-	insteadOf = "git://github.com/janneh/"
+  insteadOf = "git://github.com/janneh/"
 [help]
-	autocorrect = 1
+  autocorrect = 1
 
 [push]
-	default = simple
+  default = simple
 [pull]
-	rebase = true
+  rebase = true
