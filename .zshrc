@@ -17,6 +17,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 
+# Use brew installed vim
+export EDITOR=/usr/local/bin/vim
+
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
