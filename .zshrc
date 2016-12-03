@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="gianu"
+ZSH_THEME="pure"
 DEFAULT_USER="janne"
 
 # Plugins can be found in ~/.oh-my-zsh/plugins/*)
