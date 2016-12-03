@@ -16,7 +16,7 @@ const spec = {
     const screen = window.screen().flippedFrame()
 
     window.setFrame({
-      x: screen.width * (5 / 9),
+      x: screen.width * (4 / 9),
       y: screen.y,
       width: screen.width * (5 / 9),
       height: screen.height
