@@ -1,5 +1,9 @@
+set t_Co=256
+set term=xterm-256color
+set termencoding=utf-8
+
 syntax on
-colorscheme molokai
+colorscheme one
 
 " Encoding
 set encoding=utf-8
