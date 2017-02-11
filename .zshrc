@@ -22,7 +22,7 @@ export EDITOR=/usr/local/bin/vim
 
 # NVM
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source "/usr/local/opt/nvm/nvm.sh"
 
 # rbenv
 eval "$(rbenv init -)"
@@ -38,5 +38,6 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin # Postgres App
 export PATH=$PATH:$HOME/wildfly/current/bin # Wildfly
 export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:/usr/local/bin/yarn
 
 source ~/.aliases &>/dev/null
