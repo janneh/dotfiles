@@ -7,11 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="pure"
+ZSH_THEME="refined"
 DEFAULT_USER="janne"
 
 # Plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git ssh-agent utility tmux syntax-highlight history osx ruby rails brew)
+plugins=(git ssh-agent utility tmux syntax-highlight history osx ruby rails brew) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,3 +41,4 @@ export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:/usr/local/bin/yarn
 
 source ~/.aliases &>/dev/null
+source ~/.env &>/dev/null

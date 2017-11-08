@@ -2,6 +2,7 @@
 [user]
   name = Janne Lönn
   email = janne@izettle.com
+  signingkey = 31DA24F0DC0F3ADD
 [alias]
   co = checkout
   ci = commit
