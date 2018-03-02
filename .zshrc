@@ -39,6 +39,8 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin # Postgre
 export PATH=$PATH:$HOME/wildfly/current/bin # Wildfly
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:/usr/local/bin/yarn
+export PATH=$PATH:/Users/jannelonn/miniconda3/bin
+
 
 source ~/.aliases &>/dev/null
 source ~/.env &>/dev/null
