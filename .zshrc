@@ -11,7 +11,7 @@ ZSH_THEME="refined"
 DEFAULT_USER="janne"
 
 # Plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git ssh-agent utility tmux syntax-highlight history osx ruby rails brew) 
+plugins=(git ssh-agent utility tmux syntax-highlight history osx ruby rails brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,9 +27,6 @@ source "/usr/local/opt/nvm/nvm.sh"
 # rbenv
 eval "$(rbenv init -)"
 
-# Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
 # Go
 export GOPATH=$HOME/go
 
@@ -44,3 +41,29 @@ export PATH=$PATH:/Users/jannelonn/miniconda3/bin
 
 source ~/.aliases &>/dev/null
 source ~/.env &>/dev/null
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jannelonn/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jannelonn/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jannelonn/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jannelonn/google-cloud-sdk/completion.zsh.inc'; fi
+
+# deafault to java 11
+use_java11
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/jannelonn/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/jannelonn/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/jannelonn/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/jannelonn/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+conda deactivate
+# <<< conda initialize <<<
+
