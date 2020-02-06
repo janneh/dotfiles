@@ -59,3 +59,5 @@ PS1+=" $(git_color)$(git_branch)\[$(tput sgr0)\]"
 # $
 PS1+="\$ \[$(tput sgr0)\]"
 export PS1
+
+source ~/.extra
